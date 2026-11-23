@@ -375,6 +375,16 @@ p {
   translate: 0 -3px;
 }
 
+.card .card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-bottom: var(--s3);
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--navy-900);
+}
+
 .card .icon {
   display: grid;
   place-items: center;
