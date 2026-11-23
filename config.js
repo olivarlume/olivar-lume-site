@@ -4,8 +4,8 @@
 // escritorioDisplay / escritorioTel: telefone fixo do escritório (não é WhatsApp), escrito e para a ligação tel:.
 window.OLIVAR_CONFIG = {
   nomeNegocio: "Olivar Lume",
-  whatsappNumber: "351938557455",
-  whatsappDisplay: "+351 938 557 455",
+  whatsappNumber: "351965669983",
+  whatsappDisplay: "+351 965 669 983",
   whatsappMessage: "Olá! Gostava de saber mais sobre a Olivar Lume.",
   escritorioDisplay: "256 428 133",
   escritorioTel: "+351256428133",

@@ -9,8 +9,8 @@ Abra `config.js` e altere os valores:
 ```js
 window.OLIVAR_CONFIG = {
   nomeNegocio: "Olivar Lume",
-  whatsappNumber: "351938557455",       // indicativo + número, só dígitos (ligações wa.me)
-  whatsappDisplay: "+351 938 557 455",   // como o número aparece escrito no site
+  whatsappNumber: "351965669983",       // indicativo + número, só dígitos (ligações wa.me)
+  whatsappDisplay: "+351 965 669 983",   // como o número aparece escrito no site
   whatsappMessage: "Olá! Gostava de saber mais sobre a Olivar Lume.",
   escritorioDisplay: "256 428 133",      // telefone fixo do escritório, como aparece escrito
   escritorioTel: "+351256428133",        // formato da ligação tel:
@@ -26,7 +26,7 @@ Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é p
 | Dado | Valor |
 |---|---|
 | Nome | Olivar Lume |
-| WhatsApp | +351 938 557 455 (`wa.me/351938557455`) |
+| WhatsApp | +351 965 669 983 (`wa.me/351965669983`) |
 | Escritório (fixo, não é WhatsApp) | 256 428 133 (`tel:+351256428133`) |
 | NIF | 296932540 |
 | Morada | Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal |
