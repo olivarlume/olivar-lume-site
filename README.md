@@ -9,22 +9,25 @@ Abra `config.js` e altere os valores:
 ```js
 window.OLIVAR_CONFIG = {
   nomeNegocio: "Olivar Lume",
-  whatsappNumber: "351965669983",       // indicativo + número, só dígitos (ligações wa.me)
-  whatsappDisplay: "+351 965 669 983",   // como o número aparece escrito no site
+  whatsappNumber: "351938557455",       // indicativo + número, só dígitos (ligações wa.me)
+  whatsappDisplay: "+351 938 557 455",   // como o número aparece escrito no site
   whatsappMessage: "Olá! Gostava de saber mais sobre a Olivar Lume.",
+  escritorioDisplay: "256 428 133",      // telefone fixo do escritório, como aparece escrito
+  escritorioTel: "+351256428133",        // formato da ligação tel:
   nif: "296932540",
   morada: "Rua de Moutides, 299"
 };
 ```
 
-Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é preciso mexer no código. Se mudar o número, altere `whatsappNumber` e `whatsappDisplay` juntos.
+Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é preciso mexer no código. Se mudar o número, altere `whatsappNumber` e `whatsappDisplay` juntos (e `escritorioTel` com `escritorioDisplay` para o fixo).
 
 ## Dados da empresa (referência)
 
 | Dado | Valor |
 |---|---|
 | Nome | Olivar Lume |
-| WhatsApp | +351 965 669 983 (`wa.me/351965669983`) |
+| WhatsApp | +351 938 557 455 (`wa.me/351938557455`) |
+| Escritório (fixo, não é WhatsApp) | 256 428 133 (`tel:+351256428133`) |
 | NIF | 296932540 |
 | Morada | Rua de Moutides, 299 |
 
@@ -40,19 +43,20 @@ Os textos das páginas estão diretamente nos ficheiros `.html`. Para alterar um
 | `servicos.html` | Detalhe dos três serviços |
 | `como-funciona.html` | Três passos e o que precisa de enviar para começar |
 | `politica-privacidade.html` | Rascunho de política de privacidade (RGPD). Tem de ser revisto antes de publicar |
-| `config.js` | Número de WhatsApp, NIF e morada |
+| `config.js` | WhatsApp, telefone do escritório, NIF e morada |
 | `css/style.css` | Cores, tipografia e layout (variáveis `--navy-*`, `--gold*`, `--silver`, `--warm-white` no topo) |
 | `js/main.js` | Ligações de WhatsApp, menu mobile, animação de entrada |
 | `assets/` | Logótipo: `logo-transparente.png` (alternativa), `logo-600.webp` e `logo-1200.webp` (usados na página principal), `logo.png` (fundo opaco, para pré-visualizações sociais) e `emblema.png` (cabeçalho e ícone) |
 
+## Serviços
+
+O site oferece três serviços: Criação de Sites Profissionais, Assistentes de Inteligência Artificial e Automação de WhatsApp com IA.
+
 ## Campos por preencher
 
-Os campos com `[PREENCHER: ...]` aparecem destacados a dourado no site. Os que restam estão todos em `politica-privacidade.html`:
+Os campos com `[PREENCHER: ...]` aparecem destacados a dourado. Resta um, em `politica-privacidade.html`:
 
-- Confirmação sobre cookies ou ferramentas de análise
-- Lista de subcontratantes e países de tratamento
-- Prazos de conservação por categoria de dados
-- Medidas de segurança concretas
+- Código postal e localidade da morada
 
 ## Ver localmente
 

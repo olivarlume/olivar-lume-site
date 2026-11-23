@@ -20,6 +20,11 @@
     }
   });
 
+  // Telefone fixo do escritório: ligação tel: a partir de config.js.
+  document.querySelectorAll("[data-tel]").forEach(function (a) {
+    if (cfg.escritorioTel) a.href = "tel:" + cfg.escritorioTel;
+  });
+
   // Preenche textos vindos de config.js (número, NIF, morada).
   document.querySelectorAll("[data-config]").forEach(function (el) {
     var value = cfg[el.getAttribute("data-config")];
