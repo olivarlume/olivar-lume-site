@@ -15,7 +15,7 @@ window.OLIVAR_CONFIG = {
   escritorioDisplay: "256 428 133",      // telefone fixo do escritório, como aparece escrito
   escritorioTel: "+351256428133",        // formato da ligação tel:
   nif: "296932540",
-  morada: "Rua de Moutides, 299"
+  morada: "Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal"
 };
 ```
 
@@ -29,7 +29,7 @@ Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é p
 | WhatsApp | +351 938 557 455 (`wa.me/351938557455`) |
 | Escritório (fixo, não é WhatsApp) | 256 428 133 (`tel:+351256428133`) |
 | NIF | 296932540 |
-| Morada | Rua de Moutides, 299 |
+| Morada | Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal |
 
 Estes dados aparecem no rodapé de todas as páginas e na identificação do responsável pelo tratamento, em `politica-privacidade.html` (o texto da política é fixo no ficheiro: se mudar os dados, altere-o também).
 
@@ -54,9 +54,7 @@ O site oferece três serviços: Criação de Sites Profissionais, Assistentes de
 
 ## Campos por preencher
 
-Os campos com `[PREENCHER: ...]` aparecem destacados a dourado. Resta um, em `politica-privacidade.html`:
-
-- Código postal e localidade da morada
+Não há campos `[PREENCHER: ...]` por preencher. Se aparecer algum, fica destacado a dourado.
 
 ## Ver localmente
 
