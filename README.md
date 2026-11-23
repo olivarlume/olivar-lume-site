@@ -9,14 +9,26 @@ Abra `config.js` e altere os valores:
 ```js
 window.OLIVAR_CONFIG = {
   nomeNegocio: "Olivar Lume",
-  whatsappNumber: "[PREENCHER: número]",   // com indicativo, só dígitos. Ex.: 351912345678
+  whatsappNumber: "351965669983",       // indicativo + número, só dígitos (ligações wa.me)
+  whatsappDisplay: "+351 965 669 983",   // como o número aparece escrito no site
   whatsappMessage: "Olá! Gostava de saber mais sobre a Olivar Lume.",
-  nif: "[PREENCHER: NIF]",
-  morada: "[PREENCHER: morada]"
+  nif: "296932540",
+  morada: "Rua de Moutides, 299"
 };
 ```
 
-Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é preciso mexer no código.
+Todos os botões de WhatsApp e os dados do rodapé usam estes valores. Não é preciso mexer no código. Se mudar o número, altere `whatsappNumber` e `whatsappDisplay` juntos.
+
+## Dados da empresa (referência)
+
+| Dado | Valor |
+|---|---|
+| Nome | Olivar Lume |
+| WhatsApp | +351 965 669 983 (`wa.me/351965669983`) |
+| NIF | 296932540 |
+| Morada | Rua de Moutides, 299 |
+
+Estes dados aparecem no rodapé de todas as páginas e na identificação do responsável pelo tratamento, em `politica-privacidade.html` (o texto da política é fixo no ficheiro: se mudar os dados, altere-o também).
 
 Os textos das páginas estão diretamente nos ficheiros `.html`. Para alterar um texto, procure-o com a pesquisa do editor e substitua-o.
 
@@ -35,11 +47,12 @@ Os textos das páginas estão diretamente nos ficheiros `.html`. Para alterar um
 
 ## Campos por preencher
 
-Os campos com `[PREENCHER: ...]` aparecem destacados a dourado no site:
+Os campos com `[PREENCHER: ...]` aparecem destacados a dourado no site. Os que restam estão todos em `politica-privacidade.html`:
 
-- Número de WhatsApp (`config.js`)
-- NIF e morada (`config.js`, e a política de privacidade)
-- Subcontratantes, prazos de conservação, medidas de segurança e confirmação de cookies (`politica-privacidade.html`)
+- Confirmação sobre cookies ou ferramentas de análise
+- Lista de subcontratantes e países de tratamento
+- Prazos de conservação por categoria de dados
+- Medidas de segurança concretas
 
 ## Ver localmente
 
