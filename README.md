@@ -31,8 +31,7 @@ Os textos das páginas estão diretamente nos ficheiros `.html`. Para alterar um
 | `config.js` | Número de WhatsApp, NIF e morada |
 | `css/style.css` | Cores, tipografia e layout (variáveis `--navy-*`, `--gold*`, `--silver`, `--warm-white` no topo) |
 | `js/main.js` | Ligações de WhatsApp, menu mobile, animação de entrada |
-| `assets/` | Logótipo (`logo.png`) e emblema (`emblema.png`, usado no cabeçalho e como ícone) |
-| `logo.png` | Original do logótipo, em tamanho completo |
+| `assets/` | Logótipo: `logo-transparente.png` (alternativa), `logo-600.webp` e `logo-1200.webp` (usados na página principal), `logo.png` (fundo opaco, para pré-visualizações sociais) e `emblema.png` (cabeçalho e ícone) |
 
 ## Campos por preencher
 

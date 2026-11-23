@@ -868,3 +868,7 @@ main,
   background: radial-gradient(circle at 50% 41%, rgba(232, 203, 106, 0.6), rgba(212, 175, 55, 0.2) 35%, transparent 62%);
   mix-blend-mode: screen;
 }
+
+.logo-anim picture {
+  display: block;
+}
