@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
@@ -20,6 +20,7 @@
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <canvas id="stars" aria-hidden="true"></canvas>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header">
@@ -48,7 +49,18 @@
 
     <section class="hero">
       <div class="container hero-grid">
-        <img class="hero-logo" src="assets/logo.png" alt="Logótipo Olivar Lume: lua prateada com oliveira dourada" width="640" height="640">
+        <div class="hero-logo logo-anim" id="logo-anim">
+          <img src="assets/logo-transparente.png" alt="Logótipo Olivar Lume: lua prateada com oliveira dourada" width="1254" height="1254">
+          <div class="logo-glow" aria-hidden="true"></div>
+          <svg class="logo-light" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+            <defs><filter id="ll-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+            <path id="ll-arc" d="M430 548 C 330 548, 215 480, 178 372 C 150 285, 190 195, 262 152 C 295 133, 340 120, 402 96" fill="none"/>
+            <path id="ll-trail" d="M430 548 C 330 548, 215 480, 178 372 C 150 285, 190 195, 262 152 C 295 133, 340 120, 402 96" fill="none" stroke="#E8CB6A" stroke-width="3" stroke-linecap="round" filter="url(#ll-blur)"/>
+            <circle id="ll-halo" r="16" fill="#E8CB6A" filter="url(#ll-blur)"/>
+            <circle id="ll-dot" r="5" fill="#FFF6D6"/>
+            <circle id="ll-star" cx="402" cy="96" r="4" fill="#FFF6D6" filter="url(#ll-blur)"/>
+          </svg>
+        </div>
         <div class="hero-text">
           <span class="eyebrow">Automação de WhatsApp · Sites · Vídeos</span>
           <h1>Seu negócio merece brilhar online</h1>
@@ -216,5 +228,6 @@
 
   <script src="config.js"></script>
   <script src="js/main.js" defer></script>
+  <script src="js/effects.js" defer></script>
 </body>
 </html>
