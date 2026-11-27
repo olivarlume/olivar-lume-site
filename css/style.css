@@ -419,6 +419,36 @@ p {
   margin-top: 0.35rem;
 }
 
+.card .price {
+  margin: var(--s2) 0 0;
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--gold-hi);
+  background: linear-gradient(135deg, #F7E7A1 0%, #D4AF37 45%, #B8860B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card .price-note {
+  margin: 0.25rem 0 var(--s2);
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.custom-cta {
+  margin: var(--s4) 0 0;
+  text-align: center;
+  color: var(--warm-white);
+  font-weight: 600;
+}
+
+.custom-cta .btn {
+  margin-left: var(--s1);
+}
+
 .card .more {
   display: inline-block;
   margin-top: var(--s2);
