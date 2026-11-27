@@ -1201,3 +1201,40 @@ main,
     transform: none;
   }
 }
+
+/* Ajustes finais: marca na página inicial e ligações dos serviços */
+
+.hero-brand {
+  display: block;
+  width: 120px;
+  margin-bottom: var(--s2);
+}
+
+.hero-brand img {
+  width: 120px;
+  height: auto;
+}
+
+.service-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1) var(--s2);
+  margin-top: var(--s3);
+}
+
+.service-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--gold-hi);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-links a:hover,
+.service-links a:focus-visible {
+  background: rgba(212, 175, 55, 0.15);
+}
