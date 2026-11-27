@@ -49,33 +49,28 @@
 
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-logo logo-anim" id="logo-anim">
-          <picture>
-            <source type="image/webp" srcset="assets/logo-600.webp 600w, assets/logo-1200.webp 1200w" sizes="(min-width: 800px) 420px, min(280px, 72vw)">
-            <img src="assets/logo-transparente.png" alt="Logótipo Olivar Lume: lua prateada com oliveira dourada" width="1254" height="1254" fetchpriority="high">
-          </picture>
-          <div class="logo-glow" aria-hidden="true"></div>
-          <svg class="logo-light" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-            <defs><filter id="ll-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="0.6"/></filter></defs>
-            <path id="ll-arc" d="M78.77 44.13 L79.01 43.42 L79.1 42.45 L79.17 41.47 L79.2 40.5 L79.22 39.52 L79.21 38.54 L79.14 37.57 L79.08 36.59 L78.94 35.62 L78.78 34.65 L78.59 33.69 L78.35 32.74 L78.08 31.8 L77.77 30.87 L77.43 29.95 L77.06 29.04 L76.65 28.14 L76.22 27.26 L75.72 26.42 L75.23 25.57 L74.7 24.74 L74.15 23.93 L73.57 23.15 L72.93 22.4 L72.3 21.65 L71.64 20.93 L70.93 20.26 L70.18 19.63 L69.42 19.02 L68.67 18.4 L67.9 17.81 L67.13 17.21 L66.34 16.65 L65.52 16.12 L64.67 15.63 L63.81 15.18 L62.93 14.76 L62.03 14.36 L61.13 14.0 L60.22 13.65 L59.29 13.34 L58.35 13.07 L57.4 12.84 L56.45 12.64 L55.48 12.48 L54.51 12.35 L53.55 12.21 L52.57 12.17 L51.59 12.22 L50.62 12.26 L49.34 13.04" fill="none"/>
-            <path id="ll-trail" d="M78.77 44.13 L79.01 43.42 L79.1 42.45 L79.17 41.47 L79.2 40.5 L79.22 39.52 L79.21 38.54 L79.14 37.57 L79.08 36.59 L78.94 35.62 L78.78 34.65 L78.59 33.69 L78.35 32.74 L78.08 31.8 L77.77 30.87 L77.43 29.95 L77.06 29.04 L76.65 28.14 L76.22 27.26 L75.72 26.42 L75.23 25.57 L74.7 24.74 L74.15 23.93 L73.57 23.15 L72.93 22.4 L72.3 21.65 L71.64 20.93 L70.93 20.26 L70.18 19.63 L69.42 19.02 L68.67 18.4 L67.9 17.81 L67.13 17.21 L66.34 16.65 L65.52 16.12 L64.67 15.63 L63.81 15.18 L62.93 14.76 L62.03 14.36 L61.13 14.0 L60.22 13.65 L59.29 13.34 L58.35 13.07 L57.4 12.84 L56.45 12.64 L55.48 12.48 L54.51 12.35 L53.55 12.21 L52.57 12.17 L51.59 12.22 L50.62 12.26 L49.34 13.04" fill="none" stroke="#E8CB6A" stroke-width="0.55" stroke-linecap="round" filter="url(#ll-blur)"/>
-            <circle id="ll-halo" r="3.2" fill="#E8CB6A" filter="url(#ll-blur)"/>
-            <circle id="ll-dot" r="0.95" fill="#FFF6D6"/>
-            <circle id="ll-star" cx="49.34" cy="13.04" r="0.5" fill="#FFF6D6" filter="url(#ll-blur)"/>
-          </svg>
-        </div>
         <div class="hero-text">
           <span class="eyebrow">Sites · Assistentes de IA · WhatsApp</span>
-          <h1>Seu negócio merece brilhar online</h1>
+          <h1>Mais clientes marcados.<br><em>Menos telefone.</em></h1>
           <p class="lead">Sites profissionais, assistentes de Inteligência Artificial e automação de WhatsApp para salões de beleza, cabeleireiras, esteticistas e barbearias.</p>
           <div class="hero-actions">
             <a class="btn btn-gold" data-wa href="#contacto">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
-              Fale connosco no WhatsApp
+              Falar no WhatsApp
             </a>
             <a class="btn btn-ghost" href="servicos.html">Ver serviços</a>
           </div>
         </div>
+
+        <figure class="demo" aria-labelledby="demo-titulo">
+          <figcaption class="demo-tag" id="demo-titulo">Exemplo fictício: experimente</figcaption>
+          <div class="phone" aria-hidden="false">
+            <div class="phone-top">Salão Exemplo</div>
+            <div class="chat" id="chat" role="log" aria-live="polite"></div>
+            <div class="chat-opts" id="chat-opts"></div>
+          </div>
+          <p class="demo-note">Conversa de demonstração. Não é um cliente real nem uma marcação feita.</p>
+        </figure>
       </div>
     </section>
 
@@ -88,33 +83,8 @@
         </div>
         <div class="grid grid-3">
           <article class="card reveal">
-            <img class="card-img" src="assets/servicos/sites.webp" alt="Ilustração: robô simpático da Olivar Lume ao lado de um portátil que mostra um site moderno, com os pontos «Site moderno e personalizado», «Responsivo», «Rápido e seguro» e «Focado em resultados»" width="1000" height="1000" loading="lazy" decoding="async">
-            <h3>Criação de Sites Profissionais</h3>
-            <p class="price">149,90 € + IVA</p>
-            <p class="price-note">Instalação. Depois 29,90 € + IVA por mês. Preço de lançamento, com WhatsApp incluído.</p>
-            <p>Presença digital moderna, rápida e eficiente.</p>
-            <ul>
-            <li>Site personalizado para o seu negócio</li>
-            <li>Responsivo: funciona em PC, tablet e telemóvel</li>
-            <li>Rápido e seguro</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <img class="card-img" src="assets/servicos/assistentes-ia.webp" alt="Ilustração: robô da Olivar Lume a trabalhar num portátil, com os pontos «Atende clientes», «Organiza tarefas», «Aumenta a produtividade» e «Integra com as suas ferramentas»" width="1000" height="1000" loading="lazy" decoding="async">
-            <h3>Assistentes de Inteligência Artificial</h3>
-            <p class="price">Solução personalizada</p>
-            <p class="price-note">Preço feito à medida do seu negócio.</p>
-            <p>IA personalizada para o seu negócio.</p>
-            <ul>
-            <li>Atende clientes</li>
-            <li>Organiza tarefas</li>
-            <li>Aumenta a produtividade</li>
-            <li>Integra com as suas ferramentas</li>
-            </ul>
-          </article>
-          <article class="card reveal">
             <img class="card-img" src="assets/servicos/whatsapp.webp" alt="Ilustração: empresário descontraído e um robô da Olivar Lume junto a um telemóvel com WhatsApp, que mostra respostas automáticas, menus interativos, agendamentos e atendimento 24/7" width="1000" height="1000" loading="lazy" decoding="async">
-            <h3>Automação de WhatsApp com IA</h3>
+            <h3><a class="card-link" href="servico-whatsapp.html">Automação de WhatsApp com IA</a></h3>
             <p class="price">59,90 € + IVA</p>
             <p class="price-note">Instalação. Depois 19,90 € + IVA por mês. Preço de lançamento.</p>
             <p>Atendimento inteligente, simples e 24 horas por dia.</p>
@@ -124,6 +94,34 @@
             <li>Agendamentos</li>
             <li>Atendimento 24/7</li>
             </ul>
+            <a class="card-more" href="servico-whatsapp.html">Ver como funciona <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="card reveal">
+            <img class="card-img" src="assets/servicos/sites.webp" alt="Ilustração: robô simpático da Olivar Lume ao lado de um portátil que mostra um site moderno, com os pontos «Site moderno e personalizado», «Responsivo», «Rápido e seguro» e «Focado em resultados»" width="1000" height="1000" loading="lazy" decoding="async">
+            <h3><a class="card-link" href="servico-sites.html">Criação de Sites Profissionais</a></h3>
+            <p class="price">149,90 € + IVA</p>
+            <p class="price-note">Instalação. Depois 29,90 € + IVA por mês. Preço de lançamento, com WhatsApp incluído.</p>
+            <p>Presença digital moderna, rápida e eficiente.</p>
+            <ul>
+            <li>Site personalizado para o seu negócio</li>
+            <li>Responsivo: funciona em PC, tablet e telemóvel</li>
+            <li>Rápido e seguro</li>
+            </ul>
+            <a class="card-more" href="servico-sites.html">Ver como funciona <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="card reveal">
+            <img class="card-img" src="assets/servicos/assistentes-ia.webp" alt="Ilustração: robô da Olivar Lume a trabalhar num portátil, com os pontos «Atende clientes», «Organiza tarefas», «Aumenta a produtividade» e «Integra com as suas ferramentas»" width="1000" height="1000" loading="lazy" decoding="async">
+            <h3><a class="card-link" href="servico-assistentes.html">Assistentes de Inteligência Artificial</a></h3>
+            <p class="price">Solução personalizada</p>
+            <p class="price-note">Preço feito à medida do seu negócio.</p>
+            <p>IA personalizada para o seu negócio.</p>
+            <ul>
+            <li>Atende clientes</li>
+            <li>Organiza tarefas</li>
+            <li>Aumenta a produtividade</li>
+            <li>Integra com as suas ferramentas</li>
+            </ul>
+            <a class="card-more" href="servico-assistentes.html">Ver como funciona <span aria-hidden="true">→</span></a>
           </article>
         </div>
         <p class="custom-cta">Quer uma solução personalizada? <a class="btn btn-gold btn-sm" data-wa href="#contacto">Fale connosco</a></p>
@@ -247,5 +245,6 @@
   <script src="config.js"></script>
   <script src="js/main.js" defer></script>
   <script src="js/effects.js" defer></script>
+  <script src="js/demo.js" defer></script>
 </body>
 </html>
