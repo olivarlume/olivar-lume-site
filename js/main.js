@@ -82,4 +82,7 @@
     el.href = url;
     el.hidden = false;
   });
+  document.querySelectorAll("[data-agenda-note]").forEach(function (el) {
+    el.hidden = false;
+  });
 })();
