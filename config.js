@@ -12,5 +12,5 @@ window.OLIVAR_CONFIG = {
   nif: "296932540",
   morada: "Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal",
   // Link público da página de marcação do cliente (Google Calendar). Vazio = botão escondido.
-  agendaUrl: ""
+  agendaUrl: "https://calendar.app.google/xcNJ2e2ZJyRSqoxR9"
 };
