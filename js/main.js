@@ -73,3 +73,13 @@
     items.forEach(function (el) { observer.observe(el); });
   }
 })();
+
+// Botões de marcação: só aparecem quando config.js tem agendaUrl preenchido.
+(function () {
+  var url = window.OLIVAR_CONFIG && window.OLIVAR_CONFIG.agendaUrl;
+  if (!url || !/^https:\/\//.test(url)) return;
+  document.querySelectorAll("[data-agenda]").forEach(function (el) {
+    el.href = url;
+    el.hidden = false;
+  });
+})();

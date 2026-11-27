@@ -10,5 +10,7 @@ window.OLIVAR_CONFIG = {
   escritorioDisplay: "256 428 133",
   escritorioTel: "+351256428133",
   nif: "296932540",
-  morada: "Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal"
+  morada: "Rua de Moutides, 299, 3730-304 Vale de Cambra, Aveiro, Portugal",
+  // Link público da página de marcação do cliente (Google Calendar). Vazio = botão escondido.
+  agendaUrl: ""
 };
