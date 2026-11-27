@@ -929,3 +929,71 @@ main,
     cursor: none !important;
   }
 }
+
+/* Cartões de serviço clicáveis e páginas de detalhe */
+
+.card .card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card .card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.card .card-more {
+  position: relative;
+  display: inline-block;
+  margin-top: var(--s2);
+  font-weight: 600;
+  color: var(--gold-hi);
+  text-decoration: none;
+}
+
+.service-price {
+  display: grid;
+  gap: 0.25rem;
+  margin: var(--s3) 0 var(--s3);
+}
+
+.service-price .price {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #F7E7A1 0%, #D4AF37 45%, #B8860B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-price .price-note {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--s2);
+  grid-template-columns: 1fr;
+}
+
+.benefits li {
+  padding: var(--s2) var(--s3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+@media (min-width: 720px) {
+  .benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+}
