@@ -1108,3 +1108,96 @@ main,
 @media (prefers-reduced-motion: reduce) {
   .bubble { animation: none; }
 }
+
+/* Simulador de custo e microinterações discretas */
+
+.sim {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--s4) var(--s3);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--navy-700) 0%, var(--navy-800) 100%);
+}
+
+.sim-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+  justify-content: center;
+  margin-bottom: var(--s3);
+}
+
+.sim-opt {
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-hi);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.sim-opt:hover,
+.sim-opt:focus-visible {
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.sim-opt[aria-checked="true"] {
+  background: linear-gradient(135deg, #F7E7A1, #D4AF37);
+  color: var(--navy-900);
+}
+
+.sim-opt:active,
+.btn:active {
+  transform: scale(0.98);
+}
+
+.sim-range {
+  display: grid;
+  gap: var(--s1);
+  margin-bottom: var(--s3);
+  color: var(--text-soft);
+}
+
+.sim-range input {
+  width: 100%;
+  accent-color: var(--gold);
+  min-height: 44px;
+}
+
+.sim-result p {
+  margin: 0 0 var(--s1);
+  color: var(--warm-white);
+}
+
+.sim-result strong {
+  color: var(--gold-hi);
+  font-weight: 700;
+}
+
+.sim-total {
+  margin-top: var(--s2) !important;
+  padding-top: var(--s2);
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+}
+
+.sim-result .note {
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sim-opt,
+  .btn {
+    transition: none;
+  }
+  .sim-opt:active,
+  .btn:active {
+    transform: none;
+  }
+}
